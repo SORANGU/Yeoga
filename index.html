@@ -51,13 +51,48 @@
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- 자바스크립트 연결 -->
+  <script defer src="./js/youtube.js"></script>
   <script defer src="./js/main.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
   <header>
-    <div class=""></div>
+    <div class="inner">
+      <div class="sub-menu">
+        <a href="#">Login</a>
+        <a href="#">Join</a>
+        <a href="#">Cart</a>
+        <a href="#">Community</a>
+      </div>
+      <div class="logo">
+        <img src="./images/logo.png" alt="Logo">
+      </div>
+      <div class="main-menu">
+        <ul class="menu__content">
+          <li>Category</li>
+          <li>About us</li>
+          <li>Exhibition</li>
+          <li>Festival</li>
+          <li>Concert</li>
+          <li>Board</li>
+        </ul>
+      </div>
+    </div>
   </header>
+
+<!--YOUTUBE VIDEO-->
+<section class="youtube">
+  <div class="youtube__area">
+    <div id="player"></div>
+  </div>
+  <div class="youtube__cover"></div>
+
+</section>
+ 
   
 </body>
 </html>
