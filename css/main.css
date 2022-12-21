@@ -72,7 +72,7 @@ body {
 
 .back-to-position.to-right {
   opacity: 0;
-  transition-duration: 3s;
+  transition-duration: 4s;
   transform: translateX(-600px);
 }
 .show .back-to-position {
@@ -111,7 +111,7 @@ body {
 
 .back-to-position.to-left {
   opacity: 0;
-  transition-duration: 3s;
+  transition-duration: 4s;
   transform: translateX(600px);
 }
 .show .back-to-position {
@@ -136,7 +136,7 @@ body {
 .category .text-group .btn {
   margin-left: 20px;
   position: absolute;
-  top: 350px;
+  top: 320px;
 }
 
 
@@ -320,7 +320,7 @@ body {
   flex-direction: column;
   /* top: 180px; */
   /* left: 1000px; */
-  margin-top: 100px;
+  margin-top: 150px;
   margin-left: 450px;
   width: 552px;
 }
