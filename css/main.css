@@ -207,7 +207,13 @@ body {
 }
 
 .main-menu .menu__content li {
-  margin-right: 50px;
+  /* margin-right: 50px; */
+  padding: 20px 20px;
+}
+
+.main-menu .menu__content li:first-child {
+  /* margin-right: 50px; */
+  padding-left:3px;
 }
 
 
