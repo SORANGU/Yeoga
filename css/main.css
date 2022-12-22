@@ -122,10 +122,6 @@ body {
 .show .back-to-position.delay-2 { transition-delay:  1.5s; }
 .show .back-to-position.delay-3 { transition-delay: .2s; }
 
-
-
-
-
 .month .text-group .btn {
   position: absolute;
   top: 380px;
@@ -142,13 +138,17 @@ body {
 
 
 /* ---------------------------- */
-
+a {
+  text-decoration: none;
+  display: inline-block
+}
 header {
   z-index: 5;
   background-color: #F9F7F2;
   width: 100%;
   height: 130px;
   position: fixed;
+  box-shadow: 0px 1px 1px rgb(230, 226, 220);
 }
 
 .inner {
@@ -213,35 +213,46 @@ header {
   max-width: 1600px;
   width: 1300px;
   display: flex;
-  margin: 0 50px 0 50px;
+  /* margin: 0 50px 0 50px; */
   /* margin-left: 100px; */
-  /* justify-content: space-between; */
+  justify-content: space-between;
   /* justify-content: start; */
-  padding-left: 150px;
+  padding-left: 180px;
   padding-top: 10px;
   /* color: #BFB6AA; */
+  
 }
 .main-menu .menu__content > li {
   color: #BFB6AA;
+  
+  
   /* padding-top: 10px; */
 }
 
 .main-menu .menu__content > li > a:first-child {
-  margin-right: 120px;
+  padding-left: 50px;
+
 }
 .main-menu .menu__content > li > a {
   color: #BFB6AA;
   font-weight: 300;
+  
 }
 
 
 .main-menu .menu__content .sub-menu  {
   padding-top: 10px;
+  padding-left: 50px;
 }
 
 .main-menu .menu__content .sub-menu h4 {
   padding-top: 10px;
   color: #5c5850;
+  
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 .main-menu .menu__content .sub-menu h4 > a {
   color: #5c5850;
@@ -250,6 +261,12 @@ header {
 
 .main-menu .menu__content .sub-menu li{
   padding-top: 10px;
+  position: relative;
+
+  /* sub-menu 가운데 정렬을 위한 작업 */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
 }
 .main-menu .menu__content .sub-menu li > a {
   color: #b9b5aa;
@@ -258,7 +275,7 @@ header {
   /* z-index: 5; */
   /* margin: 0 auto; */
 
-}z
+}
 
 
 
@@ -272,6 +289,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 200px;
   /* margin-right: 20px; */
   margin-top: 20px;
   /* border-radius: 0 50px 50px 0 ; */
@@ -296,7 +314,7 @@ header {
   width: 1920px;
   height: 1080px;
   background-color: rgba(0,0,0,.3);
-  display: none;
+  /* display: none; */
 }
 
 
