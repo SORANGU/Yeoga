@@ -149,7 +149,9 @@ header {
   height: 130px;
   position: fixed;
   box-shadow: 0px 1px 1px rgb(230, 226, 220);
+  transition: height .5s;
 }
+
 
 .inner {
   max-width: 1600px;
@@ -168,14 +170,15 @@ header {
   /* margin-top: 10px; */
   margin-right: 15px;
   font-weight: 300;
-
-
-
 }
 
 .inner .sub-menu a:hover {
   color: black;
   font-weight: 300;
+}
+
+.main-menu:hover header {
+  height: 200px;
 }
 
 .inner .logo img {
@@ -217,51 +220,62 @@ header {
   /* margin-left: 100px; */
   justify-content: space-between;
   /* justify-content: start; */
-  padding-left: 180px;
-  padding-top: 10px;
+  /* padding-left: 180px; */
+  /* padding-top: 5px; */
   /* color: #BFB6AA; */
-  
+  position:absolute;
+  top: 80px;
+  left: 180px;
 }
 .main-menu .menu__content > li {
   color: #BFB6AA;
   
   
+  
   /* padding-top: 10px; */
 }
 
-.main-menu .menu__content > li > a:first-child {
-  padding-left: 50px;
-
-}
 .main-menu .menu__content > li > a {
   color: #BFB6AA;
   font-weight: 300;
-  
+  cursor: pointer;
+  padding: 5px 5px;
 }
 
+.main-menu .menu__content > li > a:hover {
+  border-bottom: 2px solid #5c5850;
+  color: #5c5850;
+}
+
+
+.main-menu .menu__content > li > a:first-child {
+  /* padding-left: 50px; */
+}
 
 .main-menu .menu__content .sub-menu  {
-  padding-top: 10px;
-  padding-left: 50px;
+  position: absolute;
+  top: 30px;
+  /* padding-top: 10px; */
+  padding-left: 5px;
+  display: none;
 }
+.main-menu:hover .sub-menu {
+  display: block;
+  width: 100%;
+  /* background-color: #F9F7F2; */
+  /* transition: all .5s .5s;  */
+
+}
+
 
 .main-menu .menu__content .sub-menu h4 {
   padding-top: 10px;
   color: #5c5850;
-  
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
-}
-.main-menu .menu__content .sub-menu h4 > a {
-  color: #5c5850;
-  font-size: 15px;
 }
 
-.main-menu .menu__content .sub-menu li{
+.main-menu .menu__content .sub-menu li {
   padding-top: 10px;
-  position: relative;
+  /* position: relative; */
 
   /* sub-menu 가운데 정렬을 위한 작업 */
   display: flex;
@@ -274,9 +288,11 @@ header {
   font-weight: 300;
   /* z-index: 5; */
   /* margin: 0 auto; */
-
 }
 
+.main-menu .menu__content .sub-menu li > a:hover {
+  color: #5c5850;
+}
 
 
 /*YOUTUBE VIDEO*/
