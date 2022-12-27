@@ -205,34 +205,29 @@ header {
   /* color: #BFB6AA; */
 }
 
+
+
+
+
+
+
+
 .main-menu {
-  max-width: 2000px;
-  width: 1920;
   height: 40px;
   border-top: 1px solid #cfc9c2;
   border-bottom: 1px solid #cfc9c2;
 }
 .main-menu .menu__content {
-  max-width: 1600px;
   width: 1300px;
   display: flex;
-  /* margin: 0 50px 0 50px; */
-  /* margin-left: 100px; */
   justify-content: space-between;
-  /* justify-content: start; */
-  /* padding-left: 180px; */
-  /* padding-top: 5px; */
-  /* color: #BFB6AA; */
   position:absolute;
   top: 80px;
-  left: 180px;
+  padding-left: 180px;
 }
 .main-menu .menu__content > li {
   color: #BFB6AA;
-  
-  
-  
-  /* padding-top: 10px; */
+
 }
 
 .main-menu .menu__content > li > a {
@@ -240,30 +235,41 @@ header {
   font-weight: 300;
   cursor: pointer;
   padding: 5px 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-menu .menu__content > li > a:hover {
-  border-bottom: 2px solid #5c5850;
   color: #5c5850;
 }
 
-
-.main-menu .menu__content > li > a:first-child {
-  /* padding-left: 50px; */
+.main-menu .menu__content > li > a:hover .main-menu {
+  height: 200px;
 }
-
 .main-menu .menu__content .sub-menu  {
   position: absolute;
+  z-index: 5;
   top: 30px;
-  /* padding-top: 10px; */
-  padding-left: 5px;
+  padding-left: 30px;
   display: none;
 }
-.main-menu:hover .sub-menu {
+
+.category{
+  padding-left: 100px;
+}
+
+.menu__content .category:hover .sub-menu-1 {
   display: block;
-  width: 100%;
-  /* background-color: #F9F7F2; */
-  /* transition: all .5s .5s;  */
+  position: absolute;
+  top: 33px;
+  background-color: #F9F7F2;
+  border-radius: 10px;
+  border-top: 1px solid #cfc9c2;
+  height: 220px;
+  width: 150px;
 
 }
 
@@ -275,9 +281,6 @@ header {
 
 .main-menu .menu__content .sub-menu li {
   padding-top: 10px;
-  /* position: relative; */
-
-  /* sub-menu 가운데 정렬을 위한 작업 */
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -286,13 +289,25 @@ header {
   color: #b9b5aa;
   font-size: 14px;
   font-weight: 300;
+  /* position: absolute; */
   /* z-index: 5; */
   /* margin: 0 auto; */
 }
 
 .main-menu .menu__content .sub-menu li > a:hover {
-  color: #5c5850;
+  color: #8a8273;
+  font-weight: 500;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /*YOUTUBE VIDEO*/
