@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
-  background-color: #F9F7F2;
-  height: 5000px;
+  /* background-color: #F9F7F2; */
+  /* height: 5000px; */
 }
 
 ul, ol {
@@ -155,6 +155,7 @@ header {
   z-index: 5;
   background-color: #F9F7F2;
   width: 100%;
+  height: 155px;
   position: fixed;
   box-shadow: 0px 1px 1px rgb(230, 226, 220);
   transition: height .5s;
@@ -222,23 +223,20 @@ header > .inner {
   width: 170px;
 }
 
-.main-menu .menu__content:hover .sub-menu {
-  opacity: 1;
-  visibility: visible;
-  /* display: block; */
-}
-
 .main-menu .menu__content > li > a {
   color: #afa495;
-  font-weight: 300;
+  font-weight: 500;
   cursor: pointer;
-  padding: 6px 12px;
+  padding: 12px 12px;
 }
 
 .main-menu .menu__content > li > a:hover {
   color: #5c5850;
   font-weight: 500;
+  border-bottom: 1px solid #5c5850;
 }
+
+
 
 
 .menu__content .sub-menu  {
@@ -248,14 +246,40 @@ header > .inner {
   /* display: none; */
   opacity: 0;
   visibility: hidden;
-  transition: opacity 2s;
+  transition: opacity 1s;
 }
 
-.main-menu:hover .sub-menu {
+.main-menu .menu__content:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
   /* display: block; */
+}
 
+.sub-menu-bg {
+  /* position:absolute; */
+  height: 250px;
+  /* width: 100%; */
+  background-color: transparent;
+  /* position: relative; */
+  /* z-index: 1; */
+  
+  /* opacity: 0;
+  visibility: hidden; */
+  /* transition: background-color 1s; */
+  transition: opacity 1s, visibility 1s;
+}
+
+nav:hover + .sub-menu-bg {
+  /* opacity: 1;
+  visibility: visible; */
+  background-color: #F9F7F2;
+  box-shadow: 0px 1px 1px rgb(230, 226, 220);
 
 }
+
+
+
+
 
 .main-menu .menu__content .sub-menu h4 {
   padding-top: 30px;
@@ -271,22 +295,13 @@ header > .inner {
   padding: 6px 12px;
 }
 
+.main-menu .menu__content .sub-menu li:hover {
+background-color: #dfd7cd;
+}
+
 .main-menu .menu__content .sub-menu li > a:hover {
-  color: #8a8273;
+  color: #5c5850;
   font-weight: 500;
-}
-
-.sub-menu-bg {
-  /* position: absolute; */
-  /* top: 200px; */
-  /* width: 1920px; */
-  height: 250px;
-}
-
-
-.main-menu:hover .sub-menu-bg {
-  /* width: 100%;
-  height: 230px; */
 }
 
 
