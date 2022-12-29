@@ -212,13 +212,20 @@ header > .inner {
 .main-menu .menu__content {
   display: flex;
   align-items: center;
-  gap: 140px;
+  /* gap: 140px; */
 }
 
 .main-menu .menu__content > li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 170px;
+}
+
+.main-menu .menu__content:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  /* display: block; */
 }
 
 .main-menu .menu__content > li > a {
@@ -226,7 +233,6 @@ header > .inner {
   font-weight: 300;
   cursor: pointer;
   padding: 6px 12px;
-
 }
 
 .main-menu .menu__content > li > a:hover {
@@ -240,6 +246,9 @@ header > .inner {
   top: 30px;
   text-align: center;
   /* display: none; */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s;
 }
 
 .main-menu:hover .sub-menu {
